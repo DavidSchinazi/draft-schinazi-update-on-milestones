@@ -7,19 +7,19 @@ number:
 date:
 consensus: true
 v: 3
-area: GEN
+# area: GEN
 updates: 2418
-workgroup:
+# workgroup:
 keyword:
  - working group
  - charter
  - milestones
 venue:
-  group:
-  type:
-  mail:
-  arch:
-  github: DavidSchinazi/draft-schinazi-update-on-milestones
+#  group:
+#  type:
+#  mail:
+#  arch:
+  github: "DavidSchinazi/draft-schinazi-update-on-milestones"
   latest:
 
 author:
