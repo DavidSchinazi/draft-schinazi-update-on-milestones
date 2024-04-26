@@ -161,8 +161,8 @@ Table of Contents
    request that chairs update milestones.  However, since chairs are a
    volunteer unpaid position, they might not always have the time to
    fulfill all the tasks requested by their responsible area director.
-   The IESG would need to demonstrate the benefits of up-to-date
-   milestones in order to motivate their use.
+   The benefits of up-to-date milestones would need to demonstrated in
+   order to motivate their use.
 
 4.3.  Improve Tooling to Automate Milestones
 
@@ -171,7 +171,7 @@ Table of Contents
    that allows attaching a draft to a milestone as an "associated
    document".  This tooling could be enhanced to automatically update
    the milestone based on the status of the corresponding document.
-   However, this begs the question: if the relevant information is
+   However, this raises the question: if the relevant information is
    already available in the datatracker, what is the purpose of
    duplicating it in a milestone?
 
@@ -254,8 +254,9 @@ Table of Contents
 
 8.2.  Informative References
 
-   [DATELESS] "GitHub issue: Option to Remove Dates from Milestones",
-              <https://github.com/ietf-tools/datatracker/issues/2799>.
+   [DATELESS] "wg-chairs list discussion: Milestones and dates",
+              <https://mailarchive.ietf.org/arch/msg/wgchairs/
+              GKTCAy5As7czqteM-MlhqIvL2Ig/>.
 
 Acknowledgments
 
