@@ -20,7 +20,7 @@ venue:
 #  mail:
 #  arch:
   github: "DavidSchinazi/draft-schinazi-update-on-milestones"
-  latest:
+  latest: "https://davidschinazi.github.io/draft-schinazi-update-on-milestones/draft-schinazi-update-on-milestones.html"
 
 author:
   -
