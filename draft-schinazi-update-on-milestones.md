@@ -38,11 +38,11 @@ normative:
 
 informative:
   DATELESS:
-    title: "GitHub issue: Option to Remove Dates from Milestones"
+    title: "wg-chairs list discussion: Milestones and dates"
     author:
     - org:
     date: false
-    target: "https://github.com/ietf-tools/datatracker/issues/2799"
+    target: "https://mailarchive.ietf.org/arch/msg/wgchairs/GKTCAy5As7czqteM-MlhqIvL2Ig/"
 
 --- abstract
 
@@ -117,8 +117,8 @@ working chairs serve at the discretion of the Area Director, it is absolutely
 within the area directors' mandate to request that chairs update milestones.
 However, since chairs are a volunteer unpaid position, they might not always
 have the time to fulfill all the tasks requested by their responsible area
-director. The IESG would need to demonstrate the benefits of up-to-date
-milestones in order to motivate their use.
+director. The benefits of up-to-date milestones would need to demonstrated in
+order to motivate their use.
 
 ## Improve Tooling to Automate Milestones
 
@@ -126,7 +126,7 @@ The overwhelming majority of milestones currently on the datatracker are
 specific to a given draft. The datatracker even includes tooling that allows
 attaching a draft to a milestone as an "associated document". This tooling
 could be enhanced to automatically update the milestone based on the status of
-the corresponding document. However, this begs the question: if the relevant
+the corresponding document. However, this raises the question: if the relevant
 information is already available in the datatracker, what is the purpose of
 duplicating it in a milestone?
 
