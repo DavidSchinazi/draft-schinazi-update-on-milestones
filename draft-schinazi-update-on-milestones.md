@@ -48,9 +48,8 @@ informative:
 
 As mandated in RFC 2418, working group charters currently contain milestones.
 However, these milestones are often sufficiently out of date that they no
-longer provide value. This document exists to facilitate a community discussion
-around the future of milestones. This document could potentially update RFC
-2418.
+longer provide value. This document makes milestones optional and allows more
+discretion on their dates. It updates RFC 2418.
 
 --- middle
 
@@ -65,16 +64,16 @@ different. Milestones are now commonly ignored, and often insufficiently
 updated to the point of irrelevance. Since 2020, it has been possible for some
 working groups to use dateless milestones (see {{DATELESS}}). Since current
 usage has diverged significantly from the requirements mandated by {{RFC2418}},
-it seems valuable that we update that document to the current community
-consensus, assuming such consensus exists. This document currently describes
-possible options as a way to facilitate this community discussion, and if such
-a consensus were to emerge, this document would then update {{RFC2418}}.
+we update that document to better match how the IETF now operates. Making
+milestones optional allows removing them from working groups that would
+otherwise perpetually have out-of-date milestones, while retaining them when
+the chairs do keep them up-to-date.
 
 ## Conventions and Definitions
 
 {::boilerplate bcp14-tagged}
 
-# Current Text
+# Prior Text
 
 At the time of writing this document, the current normative language around
 milestones is in {{Section 2.2 of RFC2418}}:
@@ -96,11 +95,80 @@ working group to various interested parties. When milestones are years out of
 date, they can no longer serve that purpose. They can also cause harm if
 someone interprets them as being timely when they are in fact out of date.
 
-# Potential Path Forwards
+Additionally, the current datatracker tooling that allows dateless milestones
+appears to be in violation of the RFC 2418 text quoted above. While this is not
+a critical issue in and of itself, it helps motivate updating RFC 2418.
 
-The list of potential paths forward below is meant as a mostly exchaustive list
-of options that the author was aware of at the time of writing. If you think of
-one that isn't listed, please notify the author so it can be added.
+# Update
+
+This documents updates the guidance in RFC 2418 in the following ways.
+
+## Optionality of Milestones
+
+Milestones are now optional, on a per-working-group basis. During chartering,
+new working groups can now begin existence without milestones. Once a working
+group is chartered, milestones can be enabled or disabled without rechartering.
+
+## Optionality of Dates
+
+In RFC 2418, milestones were associated with dates. In 2020, the IESG ran an
+experiment that removed dates from milestones from some working groups. This
+practice is now officially supported. When a new working group is chartered,
+its milestones can be dated or dateless. After chartering, changing whether
+dates are enabled does not require rechartering.
+
+## Granularity of Dates
+
+Milestones can carry dates, and those dates have a granularity. Commonly, the
+dates have the granularity of a month. Other granularities are possible, such
+as a quarter, a half-year, or an IETF meeting. New granularities can be chosen
+by the IESG without updating this document.
+
+## Date Management
+
+For each working group that has enabled dated milestones, the dates can be
+configured to be modifiable either by the chairs, or by the area director. This
+allows the area director to trust the chairs to update dates without approval
+in those cases. The decision of who manages change control for the dates lies
+with the responsible area director.
+
+## Ownership
+
+As was the case in RFC 2418, changes to milestones are subject to IESG
+approval. In particular, whether a specific working group uses milestones,
+whether they have dates, and the granularity of those dates, is a decision made
+by the Area Director responsible for that working group. Once made, these
+decisions need to be posted to the mailing list of the corresponding working
+group.
+
+The Area Director is encouraged to discuss these choices with the working group
+chairs, as the success of milestones is predicated on the chairs updating them
+in a timely manner. While it is expected that this decision will almost always
+be made as agreement between working group chairs and their responsible area
+director, in the case of a disagreement the final decision lies with the area
+director.
+
+## Guidance for Chairs
+
+For working groups where milestones are enabled, chairs are expected to keep
+milestones up to date. Chairs are expected to review milestones at least once
+per IETF meeting (every four months) to ensure they are accurate.
+
+# Security Considerations
+
+Readers of the datatracker REALLY SHOULD NOT make important decisions based
+solely on the status of working group milestones as those could be out of date.
+
+# IANA Considerations
+
+This document has no IANA actions.
+
+--- back
+
+# Alternatives Considered
+
+During discussions around this document, the following alternatives were
+considered.
 
 ## Do Nothing
 
@@ -130,27 +198,6 @@ the corresponding document. However, this raises the question: if the relevant
 information is already available in the datatracker, what is the purpose of
 duplicating it in a milestone?
 
-## Formalize Dateless Milestones
-
-The current datatracker tooling that allows dateless milestones appears to be
-in violation of the RFC 2418 text quoted above. While this is not a critical
-issue in and of itself, it helps motivate updating RFC 2418. We could update
-RFC 2418 to reflect the reality of our current process.
-
-## Make Milestones Optional
-
-Another potential update to RFC 2418 would be to make milestones optional.
-Since some area directors find milestones helpful and others do not, we could
-have the best of both worlds by formally making milestones optional: they would
-then be enabled or disabled for each working group on a case-by-case basis. The
-responsible area director would decide whether to enable milestones or not,
-though they should involve the working group chairs in that decision as
-milestones can only be successful is chairs update them.
-
-Making milestones optional allows removing them from working groups that would
-otherwise perpetually have out-of-date milestones, while retaining them when
-the chairs do keep them up-to-date.
-
 ## Remove Milestones Entirely
 
 Another more drastic option would be to remove milestones entirely from the
@@ -170,26 +217,10 @@ now been automated.
 While such small points do help motivate updating RFC 2418, it is unclear if
 much larger changes would be beneficial.
 
-# Conclusion
-
-Based on the above, the author currently believes that the best path forward
-would be to update RFC 2418 to both make milestones optional, and codify the
-availability of dateless milestones. Making such a change would require IETF
-consensus.
-
-# Security Considerations
-
-Readers of the datatracker REALLY SHOULD NOT make important decisions based
-solely on the status of working group milestones as those could be out of date.
-
-# IANA Considerations
-
-This document has no IANA actions.
-
---- back
-
 # Acknowledgments
 {:numbered="false"}
 
 Some of the contents of this document were inspired by a presentation given by
-Adam Roach at the WG Chairs’ Forum at IETF 103 in November 2018.
+Adam Roach at the WG Chairs’ Forum at IETF 103 in November 2018. The author
+would like to thank everyone who commented on the various email discussions
+about this topic.
