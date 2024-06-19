@@ -9,9 +9,8 @@
 <meta content="
        As mandated in RFC 2418, working group charters currently contain milestones.
 However, these milestones are often sufficiently out of date that they no
-longer provide value. This document exists to facilitate a community discussion
-around the future of milestones. This document could potentially update RFC
-2418. 
+longer provide value. This document makes milestones optional and allows more
+discretion on their dates. It updates RFC 2418. 
     " name="description">
 <meta content="xml2rfc 3.21.0" name="generator">
 <meta content="working group" name="keyword">
@@ -20,17 +19,17 @@ around the future of milestones. This document could potentially update RFC
 <meta content="draft-schinazi-update-on-milestones-latest" name="ietf.draft">
 <!-- Generator version information:
   xml2rfc 3.21.0
-    Python 3.11.9
+    Python 3.12.3
     ConfigArgParse 1.7
     google-i18n-address 3.1.0
     intervaltree 3.1.0
-    Jinja2 3.1.2
-    lxml 4.9.3
-    platformdirs 4.2.0
+    Jinja2 3.1.4
+    lxml 4.9.4
+    platformdirs 4.2.2
     pycountry 22.3.5
     PyYAML 6.0.1
     requests 2.31.0
-    setuptools 68.2.2
+    setuptools 69.5.1
     six 1.16.0
     wcwidth 0.2.13
 -->
@@ -1031,11 +1030,11 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">An Update on Milestones</td>
-<td class="right">April 2024</td>
+<td class="right">June 2024</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Schinazi</td>
-<td class="center">Expires 28 October 2024</td>
+<td class="center">Expires 21 December 2024</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
@@ -1051,12 +1050,12 @@ svg :is([fill="white"], [fill^="#fff"]) {
 <a href="https://www.rfc-editor.org/rfc/rfc2418" class="eref">2418</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2024-04-26" class="published">26 April 2024</time>
+<time datetime="2024-06-19" class="published">19 June 2024</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Best Current Practice</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2024-10-28">28 October 2024</time></dd>
+<dd class="expires"><time datetime="2024-12-21">21 December 2024</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -1071,9 +1070,8 @@ svg :is([fill="white"], [fill^="#fff"]) {
       <h2 id="abstract"><a href="#abstract" class="selfRef">Abstract</a></h2>
 <p id="section-abstract-1">As mandated in RFC 2418, working group charters currently contain milestones.
 However, these milestones are often sufficiently out of date that they no
-longer provide value. This document exists to facilitate a community discussion
-around the future of milestones. This document could potentially update RFC
-2418.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
+longer provide value. This document makes milestones optional and allows more
+discretion on their dates. It updates RFC 2418.<a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <section class="note rfcEditorRemove" id="section-note.1">
       <h2 id="name-about-this-document">
@@ -1105,7 +1103,7 @@ around the future of milestones. This document could potentially update RFC
         time. It is inappropriate to use Internet-Drafts as reference
         material or to cite them other than as "work in progress."<a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 28 October 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
+        This Internet-Draft will expire on 21 December 2024.<a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="copyright">
@@ -1143,62 +1141,76 @@ around the future of milestones. This document could potentially update RFC
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.2">
-            <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-current-text" class="internal xref">Current Text</a></p>
+            <p id="section-toc.1-1.2.1" class="keepWithNext"><a href="#section-2" class="auto internal xref">2</a>.  <a href="#name-prior-text" class="internal xref">Prior Text</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.3">
             <p id="section-toc.1-1.3.1"><a href="#section-3" class="auto internal xref">3</a>.  <a href="#name-issues" class="internal xref">Issues</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4">
-            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-potential-path-forwards" class="internal xref">Potential Path Forwards</a></p>
+            <p id="section-toc.1-1.4.1"><a href="#section-4" class="auto internal xref">4</a>.  <a href="#name-update" class="internal xref">Update</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.1">
-                <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="auto internal xref">4.1</a>.  <a href="#name-do-nothing" class="internal xref">Do Nothing</a></p>
+                <p id="section-toc.1-1.4.2.1.1"><a href="#section-4.1" class="auto internal xref">4.1</a>.  <a href="#name-optionality-of-milestones" class="internal xref">Optionality of Milestones</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.2">
-                <p id="section-toc.1-1.4.2.2.1"><a href="#section-4.2" class="auto internal xref">4.2</a>.  <a href="#name-ensure-chairs-update-milest" class="internal xref">Ensure Chairs Update Milestones</a></p>
+                <p id="section-toc.1-1.4.2.2.1"><a href="#section-4.2" class="auto internal xref">4.2</a>.  <a href="#name-optionality-of-dates" class="internal xref">Optionality of Dates</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.3">
-                <p id="section-toc.1-1.4.2.3.1"><a href="#section-4.3" class="auto internal xref">4.3</a>.  <a href="#name-improve-tooling-to-automate" class="internal xref">Improve Tooling to Automate Milestones</a></p>
+                <p id="section-toc.1-1.4.2.3.1"><a href="#section-4.3" class="auto internal xref">4.3</a>.  <a href="#name-granularity-of-dates" class="internal xref">Granularity of Dates</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.4">
-                <p id="section-toc.1-1.4.2.4.1"><a href="#section-4.4" class="auto internal xref">4.4</a>.  <a href="#name-formalize-dateless-mileston" class="internal xref">Formalize Dateless Milestones</a></p>
+                <p id="section-toc.1-1.4.2.4.1"><a href="#section-4.4" class="auto internal xref">4.4</a>.  <a href="#name-date-management" class="internal xref">Date Management</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.5">
-                <p id="section-toc.1-1.4.2.5.1"><a href="#section-4.5" class="auto internal xref">4.5</a>.  <a href="#name-make-milestones-optional" class="internal xref">Make Milestones Optional</a></p>
+                <p id="section-toc.1-1.4.2.5.1"><a href="#section-4.5" class="auto internal xref">4.5</a>.  <a href="#name-ownership" class="internal xref">Ownership</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.6">
-                <p id="section-toc.1-1.4.2.6.1"><a href="#section-4.6" class="auto internal xref">4.6</a>.  <a href="#name-remove-milestones-entirely" class="internal xref">Remove Milestones Entirely</a></p>
-</li>
-              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.4.2.7">
-                <p id="section-toc.1-1.4.2.7.1"><a href="#section-4.7" class="auto internal xref">4.7</a>.  <a href="#name-rewrite-rfc-2418" class="internal xref">Rewrite RFC 2418</a></p>
+                <p id="section-toc.1-1.4.2.6.1"><a href="#section-4.6" class="auto internal xref">4.6</a>.  <a href="#name-guidance-for-chairs" class="internal xref">Guidance for Chairs</a></p>
 </li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.5">
-            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-conclusion" class="internal xref">Conclusion</a></p>
+            <p id="section-toc.1-1.5.1"><a href="#section-5" class="auto internal xref">5</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.6">
-            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-security-considerations" class="internal xref">Security Considerations</a></p>
+            <p id="section-toc.1-1.6.1"><a href="#section-6" class="auto internal xref">6</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7">
-            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-iana-considerations" class="internal xref">IANA Considerations</a></p>
+            <p id="section-toc.1-1.7.1"><a href="#section-7" class="auto internal xref">7</a>.  <a href="#name-references" class="internal xref">References</a></p>
+<ul class="compact toc ulBare ulEmpty">
+<li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7.2.1">
+                <p id="section-toc.1-1.7.2.1.1"><a href="#section-7.1" class="auto internal xref">7.1</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.7.2.2">
+                <p id="section-toc.1-1.7.2.2.1"><a href="#section-7.2" class="auto internal xref">7.2</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
+</li>
+            </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8">
-            <p id="section-toc.1-1.8.1"><a href="#section-8" class="auto internal xref">8</a>.  <a href="#name-references" class="internal xref">References</a></p>
+            <p id="section-toc.1-1.8.1"><a href="#appendix-A" class="auto internal xref">Appendix A</a>.  <a href="#name-alternatives-considered" class="internal xref">Alternatives Considered</a></p>
 <ul class="compact toc ulBare ulEmpty">
 <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.1">
-                <p id="section-toc.1-1.8.2.1.1"><a href="#section-8.1" class="auto internal xref">8.1</a>.  <a href="#name-normative-references" class="internal xref">Normative References</a></p>
+                <p id="section-toc.1-1.8.2.1.1"><a href="#appendix-A.1" class="auto internal xref">A.1</a>.  <a href="#name-do-nothing" class="internal xref">Do Nothing</a></p>
 </li>
               <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.2">
-                <p id="section-toc.1-1.8.2.2.1"><a href="#section-8.2" class="auto internal xref">8.2</a>.  <a href="#name-informative-references" class="internal xref">Informative References</a></p>
+                <p id="section-toc.1-1.8.2.2.1"><a href="#appendix-A.2" class="auto internal xref">A.2</a>.  <a href="#name-ensure-chairs-update-milest" class="internal xref">Ensure Chairs Update Milestones</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.3">
+                <p id="section-toc.1-1.8.2.3.1"><a href="#appendix-A.3" class="auto internal xref">A.3</a>.  <a href="#name-improve-tooling-to-automate" class="internal xref">Improve Tooling to Automate Milestones</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.4">
+                <p id="section-toc.1-1.8.2.4.1"><a href="#appendix-A.4" class="auto internal xref">A.4</a>.  <a href="#name-remove-milestones-entirely" class="internal xref">Remove Milestones Entirely</a></p>
+</li>
+              <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.8.2.5">
+                <p id="section-toc.1-1.8.2.5.1"><a href="#appendix-A.5" class="auto internal xref">A.5</a>.  <a href="#name-rewrite-rfc-2418" class="internal xref">Rewrite RFC 2418</a></p>
 </li>
             </ul>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.9">
-            <p id="section-toc.1-1.9.1"><a href="#appendix-A" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
+            <p id="section-toc.1-1.9.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-acknowledgments" class="internal xref">Acknowledgments</a></p>
 </li>
           <li class="compact toc ulBare ulEmpty" id="section-toc.1-1.10">
-            <p id="section-toc.1-1.10.1"><a href="#appendix-B" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
+            <p id="section-toc.1-1.10.1"><a href="#appendix-C" class="auto internal xref"></a><a href="#name-authors-address" class="internal xref">Author's Address</a></p>
 </li>
         </ul>
 </nav>
@@ -1218,10 +1230,10 @@ different. Milestones are now commonly ignored, and often insufficiently
 updated to the point of irrelevance. Since 2020, it has been possible for some
 working groups to use dateless milestones (see <span>[<a href="#DATELESS" class="cite xref">DATELESS</a>]</span>). Since current
 usage has diverged significantly from the requirements mandated by <span>[<a href="#RFC2418" class="cite xref">RFC2418</a>]</span>,
-it seems valuable that we update that document to the current community
-consensus, assuming such consensus exists. This document currently describes
-possible options as a way to facilitate this community discussion, and if such
-a consensus were to emerge, this document would then update <span>[<a href="#RFC2418" class="cite xref">RFC2418</a>]</span>.<a href="#section-1-1" class="pilcrow">¶</a></p>
+we update that document to better match how the IETF now operates. Making
+milestones optional allows removing them from working groups that would
+otherwise perpetually have out-of-date milestones, while retaining them when
+the chairs do keep them up-to-date.<a href="#section-1-1" class="pilcrow">¶</a></p>
 <div id="conventions-and-definitions">
 <section id="section-1.1">
         <h3 id="name-conventions-and-definitions">
@@ -1235,10 +1247,10 @@ appear in all capitals, as shown here.<a href="#section-1.1-1" class="pilcrow">�
 </div>
 </section>
 </div>
-<div id="current-text">
+<div id="prior-text">
 <section id="section-2">
-      <h2 id="name-current-text">
-<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-current-text" class="section-name selfRef">Current Text</a>
+      <h2 id="name-prior-text">
+<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-prior-text" class="section-name selfRef">Prior Text</a>
       </h2>
 <p id="section-2-1">At the time of writing this document, the current normative language around
 milestones is in <span><a href="https://rfc-editor.org/rfc/rfc2418#section-2.2" class="relref">Section 2.2</a> of [<a href="#RFC2418" class="cite xref">RFC2418</a>]</span>:<a href="#section-2-1" class="pilcrow">¶</a></p>
@@ -1266,148 +1278,118 @@ expected to be updated periodically (see <span><a href="https://rfc-editor.org/r
 working group to various interested parties. When milestones are years out of
 date, they can no longer serve that purpose. They can also cause harm if
 someone interprets them as being timely when they are in fact out of date.<a href="#section-3-1" class="pilcrow">¶</a></p>
+<p id="section-3-2">Additionally, the current datatracker tooling that allows dateless milestones
+appears to be in violation of the RFC 2418 text quoted above. While this is not
+a critical issue in and of itself, it helps motivate updating RFC 2418.<a href="#section-3-2" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="potential-path-forwards">
+<div id="update">
 <section id="section-4">
-      <h2 id="name-potential-path-forwards">
-<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-potential-path-forwards" class="section-name selfRef">Potential Path Forwards</a>
+      <h2 id="name-update">
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-update" class="section-name selfRef">Update</a>
       </h2>
-<p id="section-4-1">The list of potential paths forward below is meant as a mostly exchaustive list
-of options that the author was aware of at the time of writing. If you think of
-one that isn't listed, please notify the author so it can be added.<a href="#section-4-1" class="pilcrow">¶</a></p>
-<div id="do-nothing">
+<p id="section-4-1">This documents updates the guidance in RFC 2418 in the following ways.<a href="#section-4-1" class="pilcrow">¶</a></p>
+<div id="optionality-of-milestones">
 <section id="section-4.1">
-        <h3 id="name-do-nothing">
-<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-do-nothing" class="section-name selfRef">Do Nothing</a>
+        <h3 id="name-optionality-of-milestones">
+<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-optionality-of-milestones" class="section-name selfRef">Optionality of Milestones</a>
         </h3>
-<p id="section-4.1-1">As is often the case, the simplest path forward is to do nothing at all. It has
-the advantage of requiring the least work, but the obvious downside of not
-addressing the issues described in <a href="#issues" class="auto internal xref">Section 3</a>.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
+<p id="section-4.1-1">Milestones are now optional, on a per-working-group basis. During chartering,
+new working groups can now begin existence without milestones. Once a working
+group is chartered, milestones can be enabled or disabled without rechartering.<a href="#section-4.1-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="ensure-chairs-update-milestones">
+<div id="optionality-of-dates">
 <section id="section-4.2">
-        <h3 id="name-ensure-chairs-update-milest">
-<a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-ensure-chairs-update-milest" class="section-name selfRef">Ensure Chairs Update Milestones</a>
+        <h3 id="name-optionality-of-dates">
+<a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-optionality-of-dates" class="section-name selfRef">Optionality of Dates</a>
         </h3>
-<p id="section-4.2-1">One potential solution to the issue of out of date milestones is,
-unsurprisingly, to update the milestones often enough. This solution has the
-advantage of not requiring community consensus to update RFC 2418. Since
-working chairs serve at the discretion of the Area Director, it is absolutely
-within the area directors' mandate to request that chairs update milestones.
-However, since chairs are a volunteer unpaid position, they might not always
-have the time to fulfill all the tasks requested by their responsible area
-director. The benefits of up-to-date milestones would need to demonstrated in
-order to motivate their use.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
+<p id="section-4.2-1">In RFC 2418, milestones were associated with dates. In 2020, the IESG ran an
+experiment that removed dates from milestones from some working groups. This
+practice is now officially supported. When a new working group is chartered,
+its milestones can be dated or dateless. After chartering, changing whether
+dates are enabled does not require rechartering.<a href="#section-4.2-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="improve-tooling-to-automate-milestones">
+<div id="granularity-of-dates">
 <section id="section-4.3">
-        <h3 id="name-improve-tooling-to-automate">
-<a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-improve-tooling-to-automate" class="section-name selfRef">Improve Tooling to Automate Milestones</a>
+        <h3 id="name-granularity-of-dates">
+<a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-granularity-of-dates" class="section-name selfRef">Granularity of Dates</a>
         </h3>
-<p id="section-4.3-1">The overwhelming majority of milestones currently on the datatracker are
-specific to a given draft. The datatracker even includes tooling that allows
-attaching a draft to a milestone as an "associated document". This tooling
-could be enhanced to automatically update the milestone based on the status of
-the corresponding document. However, this raises the question: if the relevant
-information is already available in the datatracker, what is the purpose of
-duplicating it in a milestone?<a href="#section-4.3-1" class="pilcrow">¶</a></p>
+<p id="section-4.3-1">Milestones can carry dates, and those dates have a granularity. Commonly, the
+dates have the granularity of a month. Other granularities are possible, such
+as a quarter, a half-year, or an IETF meeting. New granularities can be chosen
+by the IESG without updating this document.<a href="#section-4.3-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="formalize-dateless-milestones">
+<div id="date-management">
 <section id="section-4.4">
-        <h3 id="name-formalize-dateless-mileston">
-<a href="#section-4.4" class="section-number selfRef">4.4. </a><a href="#name-formalize-dateless-mileston" class="section-name selfRef">Formalize Dateless Milestones</a>
+        <h3 id="name-date-management">
+<a href="#section-4.4" class="section-number selfRef">4.4. </a><a href="#name-date-management" class="section-name selfRef">Date Management</a>
         </h3>
-<p id="section-4.4-1">The current datatracker tooling that allows dateless milestones appears to be
-in violation of the RFC 2418 text quoted above. While this is not a critical
-issue in and of itself, it helps motivate updating RFC 2418. We could update
-RFC 2418 to reflect the reality of our current process.<a href="#section-4.4-1" class="pilcrow">¶</a></p>
+<p id="section-4.4-1">For each working group that has enabled dated milestones, the dates can be
+configured to be modifiable either by the chairs, or by the area director. This
+allows the area director to trust the chairs to update dates without approval
+in those cases. The decision of who manages change control for the dates lies
+with the responsible area director.<a href="#section-4.4-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="make-milestones-optional">
+<div id="ownership">
 <section id="section-4.5">
-        <h3 id="name-make-milestones-optional">
-<a href="#section-4.5" class="section-number selfRef">4.5. </a><a href="#name-make-milestones-optional" class="section-name selfRef">Make Milestones Optional</a>
+        <h3 id="name-ownership">
+<a href="#section-4.5" class="section-number selfRef">4.5. </a><a href="#name-ownership" class="section-name selfRef">Ownership</a>
         </h3>
-<p id="section-4.5-1">Another potential update to RFC 2418 would be to make milestones optional.
-Since some area directors find milestones helpful and others do not, we could
-have the best of both worlds by formally making milestones optional: they would
-then be enabled or disabled for each working group on a case-by-case basis. The
-responsible area director would decide whether to enable milestones or not,
-though they should involve the working group chairs in that decision as
-milestones can only be successful is chairs update them.<a href="#section-4.5-1" class="pilcrow">¶</a></p>
-<p id="section-4.5-2">Making milestones optional allows removing them from working groups that would
-otherwise perpetually have out-of-date milestones, while retaining them when
-the chairs do keep them up-to-date.<a href="#section-4.5-2" class="pilcrow">¶</a></p>
+<p id="section-4.5-1">As was the case in RFC 2418, changes to milestones are subject to IESG
+approval. In particular, whether a specific working group uses milestones,
+whether they have dates, and the granularity of those dates, is a decision made
+by the Area Director responsible for that working group. Once made, these
+decisions need to be posted to the mailing list of the corresponding working
+group.<a href="#section-4.5-1" class="pilcrow">¶</a></p>
+<p id="section-4.5-2">The Area Director is encouraged to discuss these choices with the working group
+chairs, as the success of milestones is predicated on the chairs updating them
+in a timely manner. While it is expected that this decision will almost always
+be made as agreement between working group chairs and their responsible area
+director, in the case of a disagreement the final decision lies with the area
+director.<a href="#section-4.5-2" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="remove-milestones-entirely">
+<div id="guidance-for-chairs">
 <section id="section-4.6">
-        <h3 id="name-remove-milestones-entirely">
-<a href="#section-4.6" class="section-number selfRef">4.6. </a><a href="#name-remove-milestones-entirely" class="section-name selfRef">Remove Milestones Entirely</a>
+        <h3 id="name-guidance-for-chairs">
+<a href="#section-4.6" class="section-number selfRef">4.6. </a><a href="#name-guidance-for-chairs" class="section-name selfRef">Guidance for Chairs</a>
         </h3>
-<p id="section-4.6-1">Another more drastic option would be to remove milestones entirely from the
-datatracker, and update RFC 2418 to no longer mention them.<a href="#section-4.6-1" class="pilcrow">¶</a></p>
+<p id="section-4.6-1">For working groups where milestones are enabled, chairs are expected to keep
+milestones up to date. Chairs are expected to review milestones at least once
+per IETF meeting (every four months) to ensure they are accurate.<a href="#section-4.6-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<div id="rewrite-rfc-2418">
-<section id="section-4.7">
-        <h3 id="name-rewrite-rfc-2418">
-<a href="#section-4.7" class="section-number selfRef">4.7. </a><a href="#name-rewrite-rfc-2418" class="section-name selfRef">Rewrite RFC 2418</a>
-        </h3>
-<p id="section-4.7-1">During the 15 years that have gone by since RFC 2418 was published, many
-aspects of the IETF process have changed. At this point, some portions of RFC
-2418 now feel anachronistic. As a random example, working group minutes are
-theoretically required to be encoded in ASCII, and that almost never happens
-any more in order to allow using the names of working group members that
-require different character sets. Similarly, RFC 2418 still requires chairs to
-circulate an attendance list (also known as the "blue sheets"), a task that has
-now been automated.<a href="#section-4.7-1" class="pilcrow">¶</a></p>
-<p id="section-4.7-2">While such small points do help motivate updating RFC 2418, it is unclear if
-much larger changes would be beneficial.<a href="#section-4.7-2" class="pilcrow">¶</a></p>
-</section>
-</div>
-</section>
-</div>
-<div id="conclusion">
-<section id="section-5">
-      <h2 id="name-conclusion">
-<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-conclusion" class="section-name selfRef">Conclusion</a>
-      </h2>
-<p id="section-5-1">Based on the above, the author currently believes that the best path forward
-would be to update RFC 2418 to both make milestones optional, and codify the
-availability of dateless milestones. Making such a change would require IETF
-consensus.<a href="#section-5-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="security-considerations">
-<section id="section-6">
+<section id="section-5">
       <h2 id="name-security-considerations">
-<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-security-considerations" class="section-name selfRef">Security Considerations</a>
       </h2>
-<p id="section-6-1">Readers of the datatracker REALLY <span class="bcp14">SHOULD NOT</span> make important decisions based
-solely on the status of working group milestones as those could be out of date.<a href="#section-6-1" class="pilcrow">¶</a></p>
+<p id="section-5-1">Readers of the datatracker REALLY <span class="bcp14">SHOULD NOT</span> make important decisions based
+solely on the status of working group milestones as those could be out of date.<a href="#section-5-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="iana-considerations">
-<section id="section-7">
+<section id="section-6">
       <h2 id="name-iana-considerations">
-<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-iana-considerations" class="section-name selfRef">IANA Considerations</a>
       </h2>
-<p id="section-7-1">This document has no IANA actions.<a href="#section-7-1" class="pilcrow">¶</a></p>
+<p id="section-6-1">This document has no IANA actions.<a href="#section-6-1" class="pilcrow">¶</a></p>
 </section>
 </div>
-<section id="section-8">
+<section id="section-7">
       <h2 id="name-references">
-<a href="#section-8" class="section-number selfRef">8. </a><a href="#name-references" class="section-name selfRef">References</a>
+<a href="#section-7" class="section-number selfRef">7. </a><a href="#name-references" class="section-name selfRef">References</a>
       </h2>
 <div id="sec-normative-references">
-<section id="section-8.1">
+<section id="section-7.1">
         <h3 id="name-normative-references">
-<a href="#section-8.1" class="section-number selfRef">8.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
+<a href="#section-7.1" class="section-number selfRef">7.1. </a><a href="#name-normative-references" class="section-name selfRef">Normative References</a>
         </h3>
 <dl class="references">
 <dt id="RFC2119">[RFC2119]</dt>
@@ -1426,9 +1408,9 @@ solely on the status of working group milestones as those could be out of date.<
 </section>
 </div>
 <div id="sec-informative-references">
-<section id="section-8.2">
+<section id="section-7.2">
         <h3 id="name-informative-references">
-<a href="#section-8.2" class="section-number selfRef">8.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+<a href="#section-7.2" class="section-number selfRef">7.2. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
         </h3>
 <dl class="references">
 <dt id="DATELESS">[DATELESS]</dt>
@@ -1439,17 +1421,94 @@ solely on the status of working group milestones as those could be out of date.<
 </section>
 </div>
 </section>
-<div id="acknowledgments">
+<div id="alternatives-considered">
 <section id="appendix-A">
+      <h2 id="name-alternatives-considered">
+<a href="#appendix-A" class="section-number selfRef">Appendix A. </a><a href="#name-alternatives-considered" class="section-name selfRef">Alternatives Considered</a>
+      </h2>
+<p id="appendix-A-1">During discussions around this document, the following alternatives were
+considered.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<div id="do-nothing">
+<section id="appendix-A.1">
+        <h3 id="name-do-nothing">
+<a href="#appendix-A.1" class="section-number selfRef">A.1. </a><a href="#name-do-nothing" class="section-name selfRef">Do Nothing</a>
+        </h3>
+<p id="appendix-A.1-1">As is often the case, the simplest path forward is to do nothing at all. It has
+the advantage of requiring the least work, but the obvious downside of not
+addressing the issues described in <a href="#issues" class="auto internal xref">Section 3</a>.<a href="#appendix-A.1-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="ensure-chairs-update-milestones">
+<section id="appendix-A.2">
+        <h3 id="name-ensure-chairs-update-milest">
+<a href="#appendix-A.2" class="section-number selfRef">A.2. </a><a href="#name-ensure-chairs-update-milest" class="section-name selfRef">Ensure Chairs Update Milestones</a>
+        </h3>
+<p id="appendix-A.2-1">One potential solution to the issue of out of date milestones is,
+unsurprisingly, to update the milestones often enough. This solution has the
+advantage of not requiring community consensus to update RFC 2418. Since
+working chairs serve at the discretion of the Area Director, it is absolutely
+within the area directors' mandate to request that chairs update milestones.
+However, since chairs are a volunteer unpaid position, they might not always
+have the time to fulfill all the tasks requested by their responsible area
+director. The benefits of up-to-date milestones would need to demonstrated in
+order to motivate their use.<a href="#appendix-A.2-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="improve-tooling-to-automate-milestones">
+<section id="appendix-A.3">
+        <h3 id="name-improve-tooling-to-automate">
+<a href="#appendix-A.3" class="section-number selfRef">A.3. </a><a href="#name-improve-tooling-to-automate" class="section-name selfRef">Improve Tooling to Automate Milestones</a>
+        </h3>
+<p id="appendix-A.3-1">The overwhelming majority of milestones currently on the datatracker are
+specific to a given draft. The datatracker even includes tooling that allows
+attaching a draft to a milestone as an "associated document". This tooling
+could be enhanced to automatically update the milestone based on the status of
+the corresponding document. However, this raises the question: if the relevant
+information is already available in the datatracker, what is the purpose of
+duplicating it in a milestone?<a href="#appendix-A.3-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="remove-milestones-entirely">
+<section id="appendix-A.4">
+        <h3 id="name-remove-milestones-entirely">
+<a href="#appendix-A.4" class="section-number selfRef">A.4. </a><a href="#name-remove-milestones-entirely" class="section-name selfRef">Remove Milestones Entirely</a>
+        </h3>
+<p id="appendix-A.4-1">Another more drastic option would be to remove milestones entirely from the
+datatracker, and update RFC 2418 to no longer mention them.<a href="#appendix-A.4-1" class="pilcrow">¶</a></p>
+</section>
+</div>
+<div id="rewrite-rfc-2418">
+<section id="appendix-A.5">
+        <h3 id="name-rewrite-rfc-2418">
+<a href="#appendix-A.5" class="section-number selfRef">A.5. </a><a href="#name-rewrite-rfc-2418" class="section-name selfRef">Rewrite RFC 2418</a>
+        </h3>
+<p id="appendix-A.5-1">During the 15 years that have gone by since RFC 2418 was published, many
+aspects of the IETF process have changed. At this point, some portions of RFC
+2418 now feel anachronistic. As a random example, working group minutes are
+theoretically required to be encoded in ASCII, and that almost never happens
+any more in order to allow using the names of working group members that
+require different character sets. Similarly, RFC 2418 still requires chairs to
+circulate an attendance list (also known as the "blue sheets"), a task that has
+now been automated.<a href="#appendix-A.5-1" class="pilcrow">¶</a></p>
+<p id="appendix-A.5-2">While such small points do help motivate updating RFC 2418, it is unclear if
+much larger changes would be beneficial.<a href="#appendix-A.5-2" class="pilcrow">¶</a></p>
+</section>
+</div>
+</section>
+</div>
+<div id="acknowledgments">
+<section id="appendix-B">
       <h2 id="name-acknowledgments">
 <a href="#name-acknowledgments" class="section-name selfRef">Acknowledgments</a>
       </h2>
-<p id="appendix-A-1">Some of the contents of this document were inspired by a presentation given by
-Adam Roach at the WG Chairs’ Forum at IETF 103 in November 2018.<a href="#appendix-A-1" class="pilcrow">¶</a></p>
+<p id="appendix-B-1">Some of the contents of this document were inspired by a presentation given by
+Adam Roach at the WG Chairs’ Forum at IETF 103 in November 2018. The author
+would like to thank everyone who commented on the various email discussions
+about this topic.<a href="#appendix-B-1" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="authors-addresses">
-<section id="appendix-B">
+<section id="appendix-C">
       <h2 id="name-authors-address">
 <a href="#name-authors-address" class="section-name selfRef">Author's Address</a>
       </h2>
