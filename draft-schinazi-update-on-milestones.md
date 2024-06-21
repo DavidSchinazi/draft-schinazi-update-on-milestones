@@ -59,7 +59,7 @@ As mandated in {{Section 2.2 of !RFC2418}}, a working group charter "enumerates
 a set of milestones together with time frames for their completion". That
 document also leans heavily on milestones as a process mechanism that dictates
 how a working group spends its time and conducts its business. However, more
-than 15 years after the publication of that document, the reality is often
+than 25 years after the publication of that document, the reality is often
 different. Milestones are now commonly ignored, and often insufficiently
 updated to the point of irrelevance. Since 2020, it has been possible for some
 working groups to use dateless milestones (see {{DATELESS}}). Since current
@@ -205,7 +205,7 @@ datatracker, and update RFC 2418 to no longer mention them.
 
 ## Rewrite RFC 2418
 
-During the 15 years that have gone by since RFC 2418 was published, many
+During the 25 years that have gone by since RFC 2418 was published, many
 aspects of the IETF process have changed. At this point, some portions of RFC
 2418 now feel anachronistic. As a random example, working group minutes are
 theoretically required to be encoded in ASCII, and that almost never happens
