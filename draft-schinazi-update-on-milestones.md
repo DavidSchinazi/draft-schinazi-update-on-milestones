@@ -224,4 +224,3 @@ Some of the contents of this document were inspired by a presentation given by
 Adam Roach at the WG Chairs’ Forum at IETF 103 in November 2018. The author
 would like to thank everyone who commented on the various email discussions
 about this topic.
-
