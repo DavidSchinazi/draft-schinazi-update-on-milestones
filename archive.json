@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2025-07-24T01:15:53.284906+00:00",
+  "timestamp": "2025-07-27T01:22:30.404318+00:00",
   "repo": "DavidSchinazi/draft-schinazi-update-on-milestones",
   "labels": [
     {
@@ -49,6 +49,23 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 1,
+      "id": "I_kwDOLzQTts7CUIRE",
+      "title": "Jari's comments",
+      "url": "https://github.com/DavidSchinazi/draft-schinazi-update-on-milestones/issues/1",
+      "state": "OPEN",
+      "author": "DavidSchinazi",
+      "authorAssociation": "OWNER",
+      "assignees": [],
+      "labels": [],
+      "body": "Comments from Jari Arko on [the list](https://mailarchive.ietf.org/arch/msg/procon/HMVXqv2IlAN41kV2OEghHmwxAGo/):\n\n> I read this draft [-04](https://datatracker.ietf.org/doc/html/draft-schinazi-update-on-milestones-04) and had a few small comments:\n> \n> - Overall, I support this draft, seems to be also in pretty good shape AFAICT.\n> \n> - In \"4.3. Granularity of Dates\u201d, could we use the same language as in the previous sections, so that it is clear what is changing. (I didn\u2019t think 2418 mandated specific granularity, even though it had some recommendation about 3-6 months being useful. But I could be wrong)\n> \n> - In \u201d4.4. Date Management\u201d, again would be useful to point out the change, i.e., that chairs are now also authorized to change the milestones.\n> \n> - In \u201d4.5. Ownership\u201d, you say this:\n> \n> \"As was the case in RFC 2418, changes to milestones are subject to IESG approval. In particular, whether a specific working group uses milestones, whether they have dates, and the granularity of those dates, is a decision made by the Area Director responsible for that working group,\u201d\n> \n> Is it the IESG or the responsible AD? If an AD wants to change something, should she or him be required to get an IESG buy-in on it? (Personal opinion: should be only a responsible AD decision)\n> \n> - In \u201d5. Security Considerations\u201d, you say this:\n> \n> \"Readers of the datatracker REALLY SHOULD NOT make ...\u201d\n> \n> Maybe instead: \u201dThose interested in the result of a working group SHOULD NOT make \u2026\u201d \n> \n> And I\u2019m not sure this is really a security consideration.",
+      "createdAt": "2025-07-24T14:12:52Z",
+      "updatedAt": "2025-07-24T14:12:52Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": []
 }
